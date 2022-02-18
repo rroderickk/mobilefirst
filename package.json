@@ -1,13 +1,13 @@
 {
-	"name": "projectname",
+	"name": "mobilefirst",
 	"version": "0.0.1",
-	"description": "projectDecription",
+	"description": "responsive design mobile first",
 	"homepage": "https://rroderickk.github.io/mobilefirst",
 	"main": ".src/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -b master -d dist",
+		"deploy": "gh-pages -b main -d dist",
 		"start": "webpack serve",
 		"build": "webpack --mode production"
 	},
@@ -42,6 +42,7 @@
 	},
 	"devDependencies": {
 		"css-loader": "6.5.1",
+		"gh-pages": "^3.2.3",
 		"mini-css-extract-plugin": "2.5.3",
 		"sass": "1.49.0",
 		"sass-loader": "12.4.0",
