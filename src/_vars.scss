@@ -24,10 +24,18 @@
 	padding: 0;
 	box-sizing: border-box;
 	margin: 0;
-	font-family: "Coolvetica", sans-serif;
 }
 /* Reset Styles */
 html {
 	font-size: 62.5%;
-	// font-family: "DM Sans", sans-serif;
+	// font-family: "notos", sans-serif;
+	font-family: var(--notos);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);/* rgba(0,0,0,0.004) */
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+/* Texts Variables */
+	--noto: 'Noto Sans HK', sans-serif;
+	--notos: 'Noto Serif', serif;
+	--lobster: 'Lobster Two', cursive;
+	--roboto: 'Roboto', sans-serif;
 }

@@ -10,5 +10,8 @@ const styleLayout = {
 
 const Layout =({ children })=> {
 return (
-<div className="Layout" style={styleLayout}>{children}</div>
+<div className="Layout" 
+  style={styleLayout}>
+         {children}
+</div>
 );  }; export { Layout };
