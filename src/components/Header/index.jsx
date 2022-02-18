@@ -6,9 +6,9 @@ const Header = () => { return ( <>
 <header className="headerContainer">
 <img className="logo" src={logo} alt="logo"/>
 <div className="title-container">
-  <h1>LA PROXIMA REVOLUCION EN EL INTERCAMBIO DE CRIPTOMONEDAS</h1>
-  <p>Batatabit te ayuda a navegar entre los precios y tendencias</p>
-  <a clasName="header-button" href="">Conoce nuestros planes <span>i</span></a>
+  <h1>THE NEXT REVOLUTION IN CRYPTOCURRENCY EXCHANGE</h1>
+  <p>Batatabit helps you navigate between prices and trends</p>
+  <a clasName="header-button" href="">know our plans<span>i</span></a>
 </div>
 </header>
 </> ) }; export {  Header }; 
