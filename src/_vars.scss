@@ -1,11 +1,33 @@
- "/"* Root keys "*"/
- :root {
-	 --white: #ffffff;
-	 --black: #000000;
-	 --very-light-pink: #c7c7c7;
-	 --text-input-field: #f7f7f7;
-	 --hospital-green: #acd9b2;
-	 --sm: 14px;
-	 --md: 16px;
-	 --lg: 18px;
- }
+/* Root keys */
+:root {
+	--white: #ffffff;
+	--black: #000000;
+	--very-light-pink: #c7c7c7;
+	--text-input-field: #f7f7f7;
+	--hospital-green: #acd9b2;
+	--sm: 14px;
+	--md: 16px;
+	--lg: 18px;
+
+	/* Colors */
+	--bitcoin-orange: #F7931A;
+	--soft-orange: #FFE9D5;
+	--secondary-blue: #1a9af7;
+	--soft-blue: #e7f5ff;
+	--warn-black: #201e1c;
+	--grey: #BABABA;
+	--of-white: #fAf8f7;
+	--just-white: #fff;
+}
+/* Box Size */
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Coolvetica", sans-serif;
+}
+/* Reset Styles */
+html {
+	font-size: 62.5%;
+	// font-family: "DM Sans", sans-serif;
+}

@@ -5,17 +5,12 @@ import { SectionDos }    from "@components/SectionDos";
 import { SectionTres }   from "@components/SectionTres";
 import { SectionCuatro } from "@components/SectionCuatro";
 import { Footer }        from "@components/Footer";
+import "./Home.scss"; //!@
 
 const Home =()=> { return ( 
-
 <> 
-
 <Header/> 
-
 <SectionUno/> <SectionDos/> <SectionTres/> <SectionCuatro/> 
-
 <Footer/> 
-
-</> ); 
-
-}; export { Home };
+</> 
+); }; export { Home };
