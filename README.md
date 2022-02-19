@@ -40,5 +40,13 @@
     margin-right: auto;
     margin-left: auto;
   Creo que es más sencillo, queda perfectamente alineado sin necesidad de hacer cálculos nosotros mismos.
-
 ```
+
+``` 
+<!-- Section two -->
+     <table>
+        <tr> //tr table row 
+          <td> //td table data files
+        </tr>
+      </table>
+``` 
