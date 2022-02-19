@@ -1,20 +1,41 @@
 
 import React from "react";
 
-const Td =({coin})=> { return ( <>
-{/* <tr>
-  <td>{coin.id!=="bitcoin" ? null :`${coin.id}`}</td>
-  <td>{coin.id!=="bitcoin" ? null :`${coin.current_price}`}</td>
-</tr> */}
-{/* <tr>
-  <td>{coin.id=="ethereum" ? `${coin.id}`: null }</td>
-  <td>{coin.id=="ethereum" ? `${coin.current_price}`: null }</td>
-</tr> */}
+const Td =({coin})=> { 
 
-{/* {<p>{coin.id=="bitcoin" ? `${coin.id}: ${coin.current_price} USD`: null}</p>}
-{<p>{coin.id=="ethereum"? `${coin.id}: ${coin.current_price} USD`: null}</p>}
-{<p>{coin.id=="ripple"  ? `${coin.id}: ${coin.current_price} USD`: null}</p>}
-{<p>{coin.id=="stellar" ? `${coin.id}: ${coin.current_price} USD`: null}</p>} */}
+return ( <>
+{coin.id=="bitcoin" ?
+  <>
+  <td>
+    <img style={{width:"4%"}} src={coin.image}/>
+    <p>`{coin.id}: ${coin.current_price} USD</p>
+  </td>
+  </>
+: undefined}
+{coin.id=="ethereum" ?
+  <>
+  <tr>
+    <img style={{width:"4%"}} src={coin.image}/>
+    <p>`{coin.id}: ${coin.current_price} USD</p>
+  </tr>
+  </>
+: undefined}
+{coin.id=="ripple" ?
+  <>
+  <td>
+    <img style={{width:"4%"}} src={coin.image}/>
+    <p>`{coin.id}: ${coin.current_price} USD</p>
+  </td>
+  </>
+: undefined}
+{coin.id=="stellar" ?
+  <>
+  <td>
+    <img style={{width:"4%"}} src={coin.image}/>
+    <p>`{coin.id}: ${coin.current_price} USD</p>
+  </td>
+  </>
+: undefined}
 
 </> ) }; export { Td };
 
@@ -26,6 +47,31 @@ const Td =({coin})=> { return ( <>
 
 
 
+
+
+
+
+
+
+
+{/* tabla completa */}
+{/* {coins.map(coin=><tr>{coin.id} : <td>{coin.current_price}</td></tr>)} */}
+
+{/* por pedazos */}
+{/* <tr>
+  <td>{coin.id!=="bitcoin" ? null :`${coin.id}`}</td>
+  <td>{coin.id!=="bitcoin" ? null :`${coin.current_price}`}</td>
+</tr> */}
+{/* <tr>
+  <td>{coin.id=="ethereum" ? `${coin.id}`: null }</td>
+  <td>{coin.id=="ethereum" ? `${coin.current_price}`: null }</td>
+</tr> */}
+
+{/* para el ejercicio pero trae muchos <p>vacios */}
+{/* {<p>{coin.id=="bitcoin" ? `${coin.id}: ${coin.current_price} USD`: null}</p>}
+{<p>{coin.id=="ethereum"? `${coin.id}: ${coin.current_price} USD`: null}</p>}
+{<p>{coin.id=="ripple"  ? `${coin.id}: ${coin.current_price} USD`: null}</p>}
+{<p>{coin.id=="stellar" ? `${coin.id}: ${coin.current_price} USD`: null}</p>} */}
 
 
 

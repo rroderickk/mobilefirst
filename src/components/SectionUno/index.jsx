@@ -36,9 +36,7 @@ return (  <>
       <table>
         <thead>
           <tr>
-            <td>
-            {coins.length>0 && coins.map(moneda=><Td coin={moneda} key={moneda.id}/>)}
-            </td>
+{coins.length>0 && coins.map(moneda=><Td coin={moneda} key={moneda.id}/>)}
           </tr>
         </thead>
       </table>
