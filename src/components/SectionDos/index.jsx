@@ -2,9 +2,9 @@ import React from "react";
 
 const SectionDos =()=> { return (<> 
 
-<div>
+{/* <div>
 <div>Secconst SectionDos</div>
 <div>Secconst SectionDos</div>
-</div>
+</div> */}
 
 </>) }; export { SectionDos };
