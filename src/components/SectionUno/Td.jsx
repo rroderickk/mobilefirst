@@ -1,52 +1,67 @@
 import React from "react";
 import "./index.scss";
 
-const Td =({coin})=> { 
-
-return ( <>
-<tr>
+const Td =({ coin })=> { return ( <> 
+{console.log(coin)}
 {coin.id=="bitcoin" ?
-  <>
-  <td className="table__top-left">
-    <img style={{width:"4%"}} src={coin.image}/>
-    <p className="table__top-right table__right">
-      `{coin.id}: ${coin.current_price}
-    </p>
-    <span className="spanTd">i</span>
+<>
+<tr>
+  <td className="table__top">
+    <img style={{width:"16%"}} src={coin.image}/>
+    <th className="table__top-right table__right">
+      {coin.id}: ${coin.current_price}
+    </th>
+    {coin.price_change_24h<0
+    ? <span className="spanDown"/>
+    : <span className="spanUp"/>}
   </td>
-  </>
+</tr>
+</>
 : undefined}
 {coin.id=="ethereum" ?
-  <>
+<>
+<tr>
   <td>
-    <img style={{width:"4%"}} src={coin.image}/>
-    <p className="table__right">
-      `{coin.id}: ${coin.current_price}
-    </p>
+    <img style={{width:"16%"}} src={coin.image}/>
+    <th className="table__right">
+      {coin.id}: ${coin.current_price}
+    </th>
+    {coin.price_change_24h<0
+    ? <span className="spanDown"/>
+    : <span className="spanUp"/> }
   </td>
-  </>
+</tr>
+</>
 : undefined}
 {coin.id=="ripple" ?
-  <>
+<>
+<tr>
   <td>
-    <img style={{width:"4%"}} src={coin.image}/>
-    <p className="table__right">
-      `{coin.id}: ${coin.current_price}
-    </p>
+    <img style={{width:"16%"}} src={coin.image}/>
+    <th className="table__right">
+      {coin.id}: ${coin.current_price}
+    </th>
+    {coin.price_change_24h<0
+    ? <span className="spanDown"/>
+    : <span className="spanUp"/> }
   </td>
-  </>
+</tr>
+</>
 : undefined}
 {coin.id=="stellar" ?
-  <>
-  <td>
-    <img style={{width:"4%"}} src={coin.image}/>
-    <p className="table__bottom-left table__right">
-      `{coin.id}: ${coin.current_price}
-    </p>
+<>
+<tr>
+  <td className="table__bottom">
+    <img style={{width:"16%"}} src={coin.image}/>
+    <th>{coin.id}: ${coin.current_price}</th>
+    {coin.price_change_24h<0
+    ? <span className="spanDown"/>
+    : <span className="spanUp"/> }
   </td>
-  </>
-: undefined}
 </tr>
+</>
+: undefined}
+
 </> ) }; export { Td };
 
 
