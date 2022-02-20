@@ -1,30 +1,38 @@
-
 import React from "react";
+import "./index.scss";
 
 const Td =({coin})=> { 
 
 return ( <>
+<tr>
 {coin.id=="bitcoin" ?
   <>
-  <td>
+  <td className="table__top-left">
     <img style={{width:"4%"}} src={coin.image}/>
-    <p>`{coin.id}: ${coin.current_price} USD</p>
+    <p className="table__top-right table__right">
+      `{coin.id}: ${coin.current_price}
+    </p>
+    <span className="spanTd">i</span>
   </td>
   </>
 : undefined}
 {coin.id=="ethereum" ?
   <>
-  <tr>
+  <td>
     <img style={{width:"4%"}} src={coin.image}/>
-    <p>`{coin.id}: ${coin.current_price} USD</p>
-  </tr>
+    <p className="table__right">
+      `{coin.id}: ${coin.current_price}
+    </p>
+  </td>
   </>
 : undefined}
 {coin.id=="ripple" ?
   <>
   <td>
     <img style={{width:"4%"}} src={coin.image}/>
-    <p>`{coin.id}: ${coin.current_price} USD</p>
+    <p className="table__right">
+      `{coin.id}: ${coin.current_price}
+    </p>
   </td>
   </>
 : undefined}
@@ -32,10 +40,13 @@ return ( <>
   <>
   <td>
     <img style={{width:"4%"}} src={coin.image}/>
-    <p>`{coin.id}: ${coin.current_price} USD</p>
+    <p className="table__bottom-left table__right">
+      `{coin.id}: ${coin.current_price}
+    </p>
   </td>
   </>
 : undefined}
+</tr>
 </> ) }; export { Td };
 
 
@@ -67,10 +78,10 @@ return ( <>
 </tr> */}
 
 {/* para el ejercicio pero trae muchos <p>vacios */}
-{/* {<p>{coin.id=="bitcoin" ? `${coin.id}: ${coin.current_price} USD`: null}</p>}
-{<p>{coin.id=="ethereum"? `${coin.id}: ${coin.current_price} USD`: null}</p>}
-{<p>{coin.id=="ripple"  ? `${coin.id}: ${coin.current_price} USD`: null}</p>}
-{<p>{coin.id=="stellar" ? `${coin.id}: ${coin.current_price} USD`: null}</p>} */}
+{/* {<p>{coin.id=="bitcoin" ? `${coin.id}: ${coin.current_price} `: null}</p>}
+{<p>{coin.id=="ethereum"? `${coin.id}: ${coin.current_price} `: null}</p>}
+{<p>{coin.id=="ripple"  ? `${coin.id}: ${coin.current_price} `: null}</p>}
+{<p>{coin.id=="stellar" ? `${coin.id}: ${coin.current_price} `: null}</p>} */}
 
 
 

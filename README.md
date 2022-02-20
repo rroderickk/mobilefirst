@@ -44,9 +44,15 @@
 
 ``` 
 <!-- Section two -->
-     <table>
-        <tr> //tr table row 
-          <td> //td table data files       add fetch
-        </tr>
-      </table>
+  <table>
+    <tr> //tr table row 
+      <td> //td table data files       add fetch
+    </tr>
+  </table>
+Me parece que está usando el __ y el – de la metodología BEM al revés, usa el __ para los modificadores cuando debería ser – y viceversa. Confunde un poco.
+Asi es, y pues dice que “segun la metodologia BEM” lo cual es incorrecto , pero seguro se le paso a Diego este detalle , igual tambien esta en nosotros mismos ponernos en la tarea de ver como es en si esta metodologia , si la deseamos aplicar
+``` 
+
+``` 
+<!--  -->
 ``` 
