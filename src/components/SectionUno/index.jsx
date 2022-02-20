@@ -31,12 +31,18 @@ return (  <>
     <p>we bring information in real time of the most important exchange houses and currencies in the world</p>
   </div>
   <section className="main-tables-container">
-    <div>
-    <p>Coins</p>
+    <div className="main-currency-table">
+    <p className="currency-title-table">Coins</p>
       <table>
         {/* <thead> */}
           {/* <tr> */}
-{coins.length>0 && coins.map(moneda=><Td coin={moneda} key={moneda.id}/>)}
+
+          {coins.length>0 && coins.map(moneda=>
+          <Td coin={moneda} key={moneda.id}>
+            <span></span>
+          </Td> 
+          )}
+
           {/* </tr> */}
         {/* </thead> */}
       </table>
