@@ -18,7 +18,6 @@ const reloadPrices =(ms)=>setTimeout(()=>handle(),ms)
 
 useEffect(() => {
   setCoins(useGetPrices(setCoins));
-  console.log("@==>",r);
   reloadPrices(13000);
 }, [reload]);
 
