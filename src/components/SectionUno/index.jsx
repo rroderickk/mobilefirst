@@ -18,7 +18,7 @@ const reloadPrices =(ms)=>setTimeout(()=>handle(),ms)
 
 useEffect(() => {
   setCoins(useGetPrices(setCoins));
-  // reloadPrices(13000);
+  reloadPrices(13000);
 }, [reload]);
 
 const timeStamp =()=> new Date().toJSON().slice(0,19);

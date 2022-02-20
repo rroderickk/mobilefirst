@@ -54,5 +54,17 @@ Asi es, y pues dice que “segun la metodologia BEM” lo cual es incorrecto , p
 ``` 
 
 ``` 
-<!--  -->
+<!--coin render  -->
+{coin.id=="stellar" ?
+<>
+<tr>
+  <td className="table__bottom">
+    <img style={{width:"16%"}} src={coin.image}/>
+    <th>{coin.id}: ${coin.current_price}</th>
+    {coin.price_change_24h<0
+    ? <span className="spanDown"/>
+    : <span className="spanUp"/> }
+  </td>
+</tr>
+</>
 ``` 
