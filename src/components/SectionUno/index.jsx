@@ -18,8 +18,8 @@ const reloadPrices =(ms)=>setTimeout(()=>handle(),ms)
 
 useEffect(() => {
   setCoins(useGetPrices(setCoins));
-  // console.log("@==>",r);
-  // reloadPrices(13000);
+  console.log("@==>",r);
+  reloadPrices(13000);
 }, [reload]);
 
 return (  <> 
@@ -34,11 +34,11 @@ return (  <>
     <div>
     <p>Coins</p>
       <table>
-        <thead>
-          <tr>
+        {/* <thead> */}
+          {/* <tr> */}
 {coins.length>0 && coins.map(moneda=><Td coin={moneda} key={moneda.id}/>)}
-          </tr>
-        </thead>
+          {/* </tr> */}
+        {/* </thead> */}
       </table>
     </div>
   </section>
