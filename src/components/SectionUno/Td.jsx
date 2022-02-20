@@ -2,7 +2,6 @@ import React from "react";
 import "./index.scss";
 
 const Td =({ coin })=> { return ( <> 
-{console.log(coin)}
 {coin.id=="bitcoin" ?
 <>
 <tr>
