@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useGetPrices } from "@hooks/useGetPrices";
-import { Td } from "./Td";
+import { Tcoin } from "./Tcoin";
 import { TableComissions } from "./TableComissions";
 import "./index.scss";//!@
 
@@ -19,7 +19,7 @@ const reloadPrices =(ms)=>setTimeout(()=>handle(),ms)
 
 useEffect(() => {
   setCoins(useGetPrices(setCoins));
-  reloadPrices(22000);
+  reloadPrices(13000);
 }, [reload]);
 
 // const timeStamp =()=> new Date().toJSON().slice(0,19).replace("T"," ");
@@ -38,11 +38,11 @@ return (  <>
       <p    className="currency-title-table">Coins</p>
       <div  className="currency-table-container">
         <table>
-          <thead>
+          <tbody>
 { coins.length>0
-  ? (coins.map(moneda=> <Td coin={moneda} key={moneda.id}/>))
-  : (<p className="NoCoins">...Coins Not Found!</p>) }
-          </thead>
+? (coins.map(moneda=> <Tcoin coin={moneda} key={moneda.id}/>))
+: (<th className="NoCoins">...Coins Not Found!</th>) }
+          </tbody>
         </table>
       </div>
     </div>

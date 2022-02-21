@@ -1,13 +1,13 @@
 import React from "react";
 import "./index.scss";//!@
 
-const Td =({ coin })=> { return ( <> 
+const Tcoin =({ coin })=> { return ( <> 
 {coin.id=="bitcoin" ?
 <>
 <tr>
   <td className="table__top">
     <img style={{width:"16%"}} src={coin.image}/>
-    <th className="table__top-right table__right"> {coin.id}: </th>
+    <th className="table__top-right table__right">{coin.id}:</th>
     <td className="price">${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
@@ -15,35 +15,35 @@ const Td =({ coin })=> { return ( <>
   </td>
 </tr>
 </>
-: undefined}
+:undefined}
 {coin.id=="ethereum" ?
 <>
 <tr>
   <td>
     <img style={{width:"16%"}} src={coin.image}/>
-    <th className="table__right"> {coin.id}:</th>
+    <th className="table__right">{coin.id}:</th>
     <td className="price">${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
-    : <span className="spanUp"/> }
+    : <span className="spanUp"/>}
   </td>
 </tr>
 </>
-: undefined}
+:undefined}
 {coin.id=="ripple" ?
 <>
 <tr>
   <td>
     <img style={{width:"16%"}} src={coin.image}/>
-    <th className="table__right"> {coin.id}:</th>
+    <th className="table__right">{coin.id}:</th>
     <td className="price">${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
-    : <span className="spanUp"/> }
+    : <span className="spanUp"/>}
   </td>
 </tr>
 </>
-: undefined}
+:undefined}
 {coin.id=="stellar" ?
 <>
 <tr>
@@ -53,13 +53,13 @@ const Td =({ coin })=> { return ( <>
     <td className="price">${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
-    : <span className="spanUp"/> }
+    : <span className="spanUp"/>}
   </td>
 </tr>
 </>
-: undefined}
+:undefined}
 
-</> ) }; export { Td };
+</> ) }; export { Tcoin };
 
 
 
