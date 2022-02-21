@@ -33,13 +33,13 @@ main{
   margin: 0 auto;
 }
 .main-table-container{
-  padding: 20px;
-  min-width: 235px;
-  max-width: 500px;
+  padding-left: 20px;
+  min-width: 135px;
+  max-width: 300px;
 }
 .main-exchange-backgroundImg{
   width: 200px;
-  height: 200px;
+  height: 500px;
   margin: 0 auto;
   background-image: url("@imgs/Bitcoin.svg");
   background-size: cover;
@@ -47,15 +47,17 @@ main{
   background-repeat: no-repeat;
 }
 .main-currency-table{
-  width: 70%;
+  width: 90%;
   min-width: 235px;
   max-width: 500px;
-  height: 630px;
+  height: 930px;
   margin: 0 auto;
   font-family: "inter", sans-serif;
 }
 .main-currency-table .currency-title-table{
+  width: 117%;
   margin-bottom: 15px;
+  padding-left: calc(50% - 118px);
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
@@ -70,6 +72,7 @@ main{
   align-self: center;
 }
 .currency-table-container table{
+  padding-left: 20px;
   width: 100%;
   height: 100%;
 }
@@ -93,22 +96,31 @@ main{
 .currency-table-container .table__bottom{
   border-radius: 0 0 15px 15px;
 }
+
+.currency-table-container .price{
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #757575;
+}
 .spanUp {
   display: inline-block;
-  width: 22px;
-  height: 8px;
+  width: 15px;
+  height: 10px;
   background-image: url("@icons/trending-up.svg");
+  background-repeat: no-repeat;
 }
 .spanDown {
   display: inline-block;
-  width: 29px;
-  height: 8px;
+  width: 15px;
+  height: 10px;
   background-image: url("@icons/trending-down.svg");
+  background-repeat: no-repeat;
 }
 
 
 .currency-table-date{
-  margin-top: 150px;
-  text-align: left;
+  margin-top: 320px;
+  text-align: center;
   padding-left: 22px;
 }

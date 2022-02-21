@@ -7,9 +7,8 @@ const Td =({ coin })=> { return ( <>
 <tr>
   <td className="table__top">
     <img style={{width:"16%"}} src={coin.image}/>
-    <th className="table__top-right table__right">
-      {coin.id}: ${coin.current_price}
-    </th>
+    <th className="table__top-right table__right"> {coin.id}: </th>
+    <td className="price">${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
     : <span className="spanUp"/>}
@@ -22,9 +21,8 @@ const Td =({ coin })=> { return ( <>
 <tr>
   <td>
     <img style={{width:"16%"}} src={coin.image}/>
-    <th className="table__right">
-      {coin.id}: ${coin.current_price}
-    </th>
+    <th className="table__right"> {coin.id}:</th>
+    <td>${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
     : <span className="spanUp"/> }
@@ -37,9 +35,8 @@ const Td =({ coin })=> { return ( <>
 <tr>
   <td>
     <img style={{width:"16%"}} src={coin.image}/>
-    <th className="table__right">
-      {coin.id}: ${coin.current_price}
-    </th>
+    <th className="table__right"> {coin.id}:</th>
+    <td>${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
     : <span className="spanUp"/> }
@@ -52,7 +49,8 @@ const Td =({ coin })=> { return ( <>
 <tr>
   <td className="table__bottom">
     <img style={{width:"16%"}} src={coin.image}/>
-    <th>{coin.id}: ${coin.current_price}</th>
+    <th>{coin.id}:</th>
+    <td>${coin.current_price}</td>
     {coin.price_change_24h<0
     ? <span className="spanDown"/>
     : <span className="spanUp"/> }
