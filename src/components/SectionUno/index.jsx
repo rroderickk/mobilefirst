@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useGetPrices } from "@hooks/useGetPrices";
 import { Td } from "./Td";
+import { TableComissions } from "./TableComissions";
 import "./index.scss";//!@
 
 const SectionUno =()=> { 
@@ -38,10 +39,9 @@ return (  <>
       <div  className="currency-table-container">
         <table>
           <thead>
-{coins.length>0? 
-    (coins.map(moneda=> <Td coin={moneda} key={moneda.id}/>))
-  : (<p className="NoCoins">...Coins Not Found!</p>)
-}
+{ coins.length>0
+  ? (coins.map(moneda=> <Td coin={moneda} key={moneda.id}/>))
+  : (<p className="NoCoins">...Coins Not Found!</p>) }
           </thead>
         </table>
       </div>
@@ -49,6 +49,7 @@ return (  <>
       <div  className="currency-table-date">
         <b>Actualizado: </b>{timeStamp()}
       </div>
+      <TableComissions/>
   </section>
 </section>
 </main>
