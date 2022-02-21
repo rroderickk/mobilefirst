@@ -5,10 +5,11 @@ const url="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
 
 const useGetPrices = async (state) => { 
 
-  try { const res = await axios.get(url);
-    state(res.data); 
+  try { const response = await axios.get(url);
+  if (!response) { throw new Error("No res found") }
+    state(response.data); 
     // console.log(res.data);
   } 
-  catch (error) { console.error(error) };
+  catch (error) { console.error("[-]",error) };
 
 }; export {useGetPrices};

@@ -21,7 +21,8 @@ useEffect(() => {
   reloadPrices(13000);
 }, [reload]);
 
-const timeStamp =()=> new Date().toJSON().slice(0,19);
+// const timeStamp =()=> new Date().toJSON().slice(0,19).replace("T"," ");
+const timeStamp =()=> (new Date()).toString().slice(0,25);
 
 return (  <> 
 <main>
@@ -37,14 +38,17 @@ return (  <>
       <div  className="currency-table-container">
         <table>
           <thead>
-{coins.length>0 &&coins.map(moneda=> <Td coin={moneda} key={moneda.id}/>)}
+{coins.length>0? 
+    (coins.map(moneda=> <Td coin={moneda} key={moneda.id}/>))
+  : (<p className="NoCoins">...Coins Not Found!</p>)
+}
           </thead>
         </table>
       </div>
+    </div>
       <div  className="currency-table-date">
         <b>Actualizado: </b>{timeStamp()}
       </div>
-    </div>
   </section>
 </section>
 </main>
