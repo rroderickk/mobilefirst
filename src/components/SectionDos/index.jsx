@@ -4,8 +4,8 @@ import "./index.scss";
 const SectionDos =()=> { return ( <> 
 <section className="main-product-detail">
 
-<div>
-  <span></span>
+<div className="product-detail-title">
+  <span className="batata-logo"/>
   <h2>We create a product without comparison</h2>
   <p>Reliable and designed for daily use</p>
 </div>

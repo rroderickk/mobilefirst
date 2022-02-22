@@ -41,7 +41,7 @@ return (  <>
           <tbody>
 { coins.length>0
 ? (coins.map(moneda=> <Tcoin coin={moneda} key={moneda.id}/>))
-: (<th className="NoCoins">...Coins Not Found!</th>) }
+: (<th className="NoCoins">...Coins not found!</th>) }
           </tbody>
         </table>
       </div>
