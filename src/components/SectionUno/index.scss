@@ -139,7 +139,7 @@ main{
   padding-top: 9px;
   // width: 200px;
   height: 30px;
-  margin: 0 auto;
+  margin: 4px auto;
   // margin-top: 320px;
   margin-left: calc(50% - 88px);
   background-color: var(--soft-orange);
@@ -176,4 +176,7 @@ main{
 .comissions-table table tr{
   line-height: 1.9rem;
   font-family: "inter", sans-serif;
+}
+.button{
+  cursor: pointer;
 }

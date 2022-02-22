@@ -15,6 +15,7 @@ const App = () => {
 				<Layout>
 					<Routes>
 						<Route exact path="/" element={<Home />} />
+						{/* <Route exact path="/allcryptos" element={<AllCryptos />} /> */}
 
 						{/* //todo ¡¡ InsertRoutes here !! */}
 

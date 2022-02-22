@@ -46,6 +46,9 @@ return (  <>
         </table>
       </div>
     </div>
+      <div  className="currency-table-date button">
+        <a href="/allcryptos">All Cryptos</a>
+      </div>
       <div  className="currency-table-date">
         <b>Actualizado: </b>{timeStamp()}
       </div>
