@@ -273,3 +273,23 @@ Mi CSS se ve así
 </section>
 
 ``` 
+
+``` 
+Al igual que con el botón, les comparto otras alternativas para posicionar el logo:
+El segundo argumento de la función calc() es la mitad del width del elemento.
+Usando calc() también en top:
+
+.product-detail__batata-logo {
+	position: absolute;
+	top: calc(0% - 12.5px);
+	left: calc(50% - 20px);
+}
+Usando translate():
+
+.product-detail__batata-logo {
+position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Que sería lo mismo a poner translate(-20px, -12.5px); */
+}
+``` 

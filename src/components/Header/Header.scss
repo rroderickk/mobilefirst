@@ -38,6 +38,7 @@ header img{
   color: var(--soft-orange)
 }
 .title-container #header-button {
+  cursor: pointer;
   position: absolute; //! top bottom left rigth
   left: calc(50% - 118px);
   top: 270px;
