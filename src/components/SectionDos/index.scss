@@ -1,11 +1,11 @@
 .main-product-detail{
-  outline: 1px solid red;
+  // outline: 1px solid red;
   position: relative;
   width: 100%;
   min-width: 320px;
   height: auto;
   padding: 20px 10px;
-  background-color: var(--warn-black);
+  background-color: var(--warm-black);
 }
 .batata-logo{
   position: absolute; //! su referencia es el elemento padre
@@ -24,14 +24,65 @@
   text-align: center;
 }
 .product-detail-title :nth-child(2){
+  color: var(--black);
   margin-bottom: 20px;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
-  color: var(--just-white);
 }
 .product-detail-title :nth-child(3){
   margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+.product-detail-card{
+  text-align: left;
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--soft-orange);
+  color: var(--black);
+  // outline: 1px solid red;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail-card .icon{
+  // outline: 1px solid red;
+  display: inline-block;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  // background-image: url("@icons/clock.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.clock{
+  background-image: url("@icons/clock.svg");
+}
+.eye{
+  background-image: url("@icons/eye.svg");
+}
+.dollar{
+  background-image: url("@icons/dollar-sign.svg");
+}
+.check{
+  background-image: url("@icons/check-circle.svg");
+}
+.product-card-title{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+.product-card-body{
+  outline: 4px solid red;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
