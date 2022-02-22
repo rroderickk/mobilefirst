@@ -5,6 +5,7 @@ import { useInitialState } from "@hooks/useInitialState";
 import { Layout } from "@containers/Layout";
 import { Home } from "@pages/Home";
 import { NotFound } from "@pages/NotFound";
+import { AllCryptos } from "@pages/AllCryptos";
 
 const App = () => {
 	const initialState = useInitialState();
@@ -15,7 +16,7 @@ const App = () => {
 				<Layout>
 					<Routes>
 						<Route exact path="/" element={<Home />} />
-						{/* <Route exact path="/allcryptos" element={<AllCryptos />} /> */}
+						<Route exact path="/allcryptos" element={<AllCryptos/>} />
 
 						{/* //todo ¡¡ InsertRoutes here !! */}
 

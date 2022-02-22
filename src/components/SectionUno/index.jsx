@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useGetPrices } from "@hooks/useGetPrices";
 import { Tcoin } from "./Tcoin";
 import { TableComissions } from "./TableComissions";
@@ -47,9 +48,9 @@ return (  <>
       </div>
     </div>
     {/* //todo */}
-      {/* <div  className="currency-table-date button">
-        <a href="/allcryptos">All Cryptos</a>
-      </div> */}
+      <div  className="currency-table-date button">
+        <Link to="/allcryptos">All Cryptos</Link>
+      </div>
       <div  className="currency-table-date">
         <b>Updated: </b>{timeStamp()}
       </div>
