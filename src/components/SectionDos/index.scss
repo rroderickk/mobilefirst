@@ -42,7 +42,7 @@
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  height: 150px;
+  height: auto;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--soft-orange);
@@ -74,16 +74,17 @@
 .check{
   background-image: url("@icons/check-circle.svg");
 }
-.product-card-title{
+.product-card-title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--black);
+  // outline: 4px solid red;
 }
-.product-card-body{
-  outline: 4px solid red;
-  font-size: 1.4rem;
+.product-card--body {
+  // outline: 4px solid red;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
