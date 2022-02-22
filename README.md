@@ -275,6 +275,7 @@ Mi CSS se ve así
 ``` 
 
 ``` 
+<!-- calc -->
 Al igual que con el botón, les comparto otras alternativas para posicionar el logo:
 El segundo argumento de la función calc() es la mitad del width del elemento.
 Usando calc() también en top:

@@ -8,14 +8,14 @@ const SectionUno =()=> {
 const [coins, setCoins] = useState([]);
 
 const [reload, setR] = useState([]);
-const handle =()=> {
+const handleReload =()=> {
   const x=[];
   const newR=[...x];
   newR.push(1);
   console.log("Actualizando...@==>",newR);
   setR(newR);
 }
-const reloadPrices =(ms)=>setTimeout(()=>handle(),ms)
+const reloadPrices =(milliseconds)=>setTimeout(()=>handleReload(),milliseconds);
 
 useEffect(() => {
   setCoins(useGetPrices(setCoins));
@@ -41,7 +41,7 @@ return (  <>
           <tbody>
 { coins.length>0
 ? (coins.map(moneda=> <Tcoin coin={moneda} key={moneda.id}/>))
-: (<th className="NoCoins">...Coins not found!</th>) }
+: (<tbody className="NoCoins">...Coins not found!</tbody>) }
           </tbody>
         </table>
       </div>
