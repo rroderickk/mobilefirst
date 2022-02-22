@@ -2,8 +2,8 @@ import React from "react";
 import "./index.scss";
 
 const SectionDos =()=> { return ( <> 
-<section className="main-product-detail">
 
+<section className="main-product-detail">
 <div className="product-detail-title">
   <span className="batata-logo"/>
   <h2>We create a product without comparison</h2>
@@ -30,8 +30,7 @@ const SectionDos =()=> { return ( <>
     <p     className="product-card-title">Reliable information</p>
     <p     className="product-card--body">Our sources are 100% verified and we continue to audit their content as they are updated.</p>
   </article>
-
+</section>
 </section>
 
-</section>
 </>) }; export { SectionDos };

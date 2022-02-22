@@ -51,7 +51,7 @@ return (  <>
         <a href="/allcryptos">All Cryptos</a>
       </div> */}
       <div  className="currency-table-date">
-        <b>Actualizado: </b>{timeStamp()}
+        <b>Updated: </b>{timeStamp()}
       </div>
       <TableComissions/>
   </section>
