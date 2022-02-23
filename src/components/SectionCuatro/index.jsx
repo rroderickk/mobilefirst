@@ -16,8 +16,7 @@ const SectionCuatro =()=> { return (<>
   <p>Any plan gives you access to our platform</p>
 </div>
 <section className="plans-container-slider">
-{CardData.map(datos=><Card CardData={datos} key={datos.id}/>)}
-
+  {CardData.map(datos=><Card CardData={datos} key={datos.id}/>)}
 </section>
 
 </section>
