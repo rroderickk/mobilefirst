@@ -126,9 +126,12 @@
 .Exclusive{
   background-color: var(--warn-black);
   color: white;
+  .plan-card-ca { background-color: var(--warn-black); color: white }
+  .recomendado {  background-color: var(--warn-black); color: white; border: 1px solid var(--bitcoin-orange)}
 }
 .Recommended{
   background-color: var(--soft-orange);
+  .plan-card-ca { background-color: var(--bitcoin-orange-arrow); color: white }
 }
 @media (min-width: 750px) {
   .plans__container--slider::-webkit-scrollbar {

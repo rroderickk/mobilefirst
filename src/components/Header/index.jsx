@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@logos/logo.svg";
+import logo from "@logos/papapabit.svg";
 import "./Header.scss"; //!s@
 
 const handleRef =(param)=>  window.scrollTo(0, param);
