@@ -3,7 +3,8 @@ import "./index.scss";//!@
 
 const Card =({ CardData })=> { return ( <>
 
-<article className="plans-container-card">
+<article 
+className={`plans-container-card ${CardData.plan=="Exclusive" && "Exclusive" || CardData.plan=="Recommended" && "Recommended"}`}>
   <p className="recomendado">{CardData.plan}</p>
   <div className="plan-info-container">
     <h3 className="plan-card-title">{CardData.membresy} payment</h3>

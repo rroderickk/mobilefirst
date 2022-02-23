@@ -37,6 +37,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
+
 .plans-container-slider::-webkit-scrollbar {
   background-color: var(--soft-orange);
   height: 3px;
@@ -87,6 +88,14 @@
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
+.plan-card-ca:last-child:after {
+    content: "";
+    width: 50px;
+    height: 1px;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+}
 .plan-card-saving{
   font-size: 1.2rem;
   color: #757575;
@@ -113,6 +122,12 @@
   background-image: url("@icons/orange-right-arrow.svg");
   vertical-align: text-bottom;
   // outline: 1px solid red;
+}
+.Exclusive{
+  background-color: var(--warn-black);
+}
+.Recommended{
+  background-color: var(--soft-orange);
 }
 @media (min-width: 750px) {
   .plans__container--slider::-webkit-scrollbar {
