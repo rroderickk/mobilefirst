@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.scss";
 
 const SectionCuatro =()=> { return (<> 
 <section id="plans" className="main-plans-container">
@@ -8,15 +9,15 @@ const SectionCuatro =()=> { return (<>
   <p>Any plan gives you access to our platform</p>
 </div>
 <section className="plans-container-slider">
-        <article className="plans-container-card">
-          <p>Recommended</p>
-          <div>
-            <h3>Annual payment</h3>
-            <p><sup>$</sup> 99</p>
-            <p>* Save $129 compared to the monthly plan</p>
-            <button>Choose this <sup>i</sup></button>
-          </div>
-        </article>
+<article className="plans-container-card">
+  <p className="recomendado">Recommended</p>
+  <div className="plan-info-container">
+    <h3 className="plan-card-title">Annual payment</h3>
+    <p  className="plan-card-price"><sup>$</sup> 99</p>
+    <p  className="plan-card-saving">* Save $129 compared to the monthly plan</p>
+    <button className="plan-card-ca">Choose this <sup>i</sup></button>
+  </div>
+</article>
 </section>
 
 </section>
