@@ -1,10 +1,10 @@
 import   React           from "react";
-import { Header }        from "@components/Header";
-import { SectionUno }    from "@components/SectionUno";
-import { SectionDos }    from "@components/SectionDos";
-import { SectionTres }   from "@components/SectionTres";
+import { Header        } from "@components/Header";
+import { SectionUno    } from "@components/SectionUno";
+import { SectionDos    } from "@components/SectionDos";
+import { SectionTres   } from "@components/SectionTres";
 import { SectionCuatro } from "@components/SectionCuatro";
-import { Footer }        from "@components/Footer";
+import { Footer        } from "@components/Footer";
 import "./Home.scss"; //!@
 
 const Home =()=> { return ( 
