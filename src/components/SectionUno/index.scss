@@ -127,7 +127,7 @@ main{
   background-repeat: no-repeat;
 }
 .currency-table-container .NoCoins{
-  color: red;
+  color: var(--bitcoin-orange);
   font-weight: bold;
   font-family: Helvetica;
   display: flex;
