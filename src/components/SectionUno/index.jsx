@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { useGetPrices } from "@hooks/useGetPrices";
-import { Tcoin } from "./Tcoin";
+import { Link            } from "react-router-dom";
+import { useGetPrices    } from "@hooks/useGetPrices";
+import { Tcoin           } from "./Tcoin";
 import { TableComissions } from "./TableComissions";
 import "./index.scss";//!@
 

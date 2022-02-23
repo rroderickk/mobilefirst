@@ -6,7 +6,6 @@ main{
   background-color: var(--off-white);
 }
 .main-exchange-container{
-  // outline: 1px solid red;
   width: 100%;
   height: auto;
   padding-top: 80px;
@@ -27,18 +26,6 @@ main{
     color: #757575;
   }
 }
-.main-exchange-container-title{
-  width: 90%;
-  min-width: 288px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-.main-table-container{
-  // outline: 1px solid red;
-  padding-left: 20px;
-  min-width: 135px;
-  max-width: 300px;
-}
 .main-exchange-backgroundImg{
   width: 200px;
   height: 500px;
@@ -47,18 +34,34 @@ main{
   background-size: cover;
   background-position:center; 
   background-repeat: no-repeat;
+  // outline: 1px solid green;
 }
-.main-currency-table{
+.main-exchange-container-title{
+  // outline: 1px solid green;
   width: 90%;
-  // outline: 1px solid red;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.main-table-container{
+  // outline: 1px solid crimson;
+  margin: 0 auto;
+  padding: 20px;
+  min-width: 135px;
+  max-width: 300px;
+}
+
+.main-currency-table{
+  // outline: 1px solid grey;
+  width: auto;
   min-width: 235px;
   max-width: 500px;
   height: 800px;
-  margin: 0 auto;
+  // margin: 0 auto;
   font-family: "inter", sans-serif;
 }
 .main-currency-table .currency-title-table{
-  width: 117%;
+  width: auto;
   margin-bottom: 15px;
   padding-left: calc(50% - 118px);
   font-size: 1.8rem;
@@ -67,19 +70,13 @@ main{
   color: var(--bitcoin-orange);
 }
 .currency-table-container{
+  // outline: 4px solid cyan;
   width: auto;
   min-width: 230px;
   max-width: 300px;
   height: auto;
   align-items: center;
   align-self: center;
-  // outline: 1px solid red;
-}
-.currency-table-container table{
-  padding-left: 20px;
-  // outline: 1px solid red;
-  width: auto;
-  height: auto;
 }
 .currency-table-container td{
   border-radius: 5px;
@@ -135,13 +132,15 @@ main{
   padding-left: calc(50% - 60px);
 }
 .currency-table-date{
+  // outline: 1px solid orange;
+  min-width: 235px;
+  max-width: 200px;
   text-align: center;
   padding-top: 9px;
   // width: 200px;
   height: 30px;
   margin: 4px auto;
-  // margin-top: 320px;
-  margin-left: calc(50% - 88px);
+  // margin-left: calc(50% - 88px);
   background-color: var(--soft-orange);
   border-radius: 8px;
   font-size: 1.2rem;
@@ -150,10 +149,10 @@ main{
   box-shadow: 0px 1px 1px rgba(89, 73, 30, 0.16);
 }
 .comissions-table{
-  margin-top: 20px;
-  margin-left: calc(50% - 90px);
-  padding-bottom: 20px;
   // outline: 1px solid red;
+  margin-top: 20px;
+  // margin-left: calc(50% - 90px);
+  padding-bottom: 20px;
   background-color: var(--just-white);
   border-radius: 15px;
   margin-bottom: 34px;
@@ -174,7 +173,6 @@ main{
   width: 130px;
   margin-left:  calc(50% - 68px);
   padding-bottom: 10px;
-  // outline: 1px solid red;
 }
 .comissions-table table tr{
   line-height: 1.9rem;

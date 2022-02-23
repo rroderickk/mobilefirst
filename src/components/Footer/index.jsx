@@ -1,7 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Footer =()=> { return ( 
+const Footer =()=> { return ( <>
 
-<div>Footer</div>
+<section>
+  <ul>
+    <li><Link to="">i</Link></li>
+    <li><Link to="">i</Link></li>
+    <li><Link to="">i</Link></li>
+  </ul>
+</section>
 
-) }; export { Footer };
+<div>asldkhfFooter</div>
+<section></section>
+
+
+</> ) }; export { Footer };
