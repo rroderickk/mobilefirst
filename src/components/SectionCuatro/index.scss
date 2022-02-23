@@ -62,14 +62,14 @@
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
-  color: var(--black);
+  // color: var(--black);
 }
 .plan-card-price{
   padding: 5px 0;
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 5.3rem;
-  color: var(--black);
+  // color: var(--black);
   // outline: 1px solid red;
 }
 .plan-card-price sup{
@@ -125,6 +125,7 @@
 }
 .Exclusive{
   background-color: var(--warn-black);
+  color: white;
 }
 .Recommended{
   background-color: var(--soft-orange);
