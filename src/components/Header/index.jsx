@@ -10,7 +10,7 @@ const Header =()=> { return ( <>
 <img className="logo" src={logo} alt="logo"/>
 <div className="title-container">
   <h1>THE NEXT REVOLUTION IN CRYPTOCURRENCY EXCHANGE</h1>
-  <p>Batatabit helps you navigate between prices and trends</p>
+  <p>PapapaBit helps you navigate between prices and trends</p>
   <a id="header-button" href="#plans" /*onClick={()=>handleRef(4000)}*/ >Know our plans<span id="span"/></a>
 </div>
 </header>

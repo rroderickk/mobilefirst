@@ -15,7 +15,7 @@ const SectionCuatro =()=> { return (<>
     <h3 className="plan-card-title">Annual payment</h3>
     <p  className="plan-card-price"><sup>$</sup> 99</p>
     <p  className="plan-card-saving">* Save $129 compared to the monthly plan</p>
-    <button className="plan-card-ca">Choose this <sup>i</sup></button>
+    <button className="plan-card-ca">Choose this <span/></button>
   </div>
 </article>
 </section>
