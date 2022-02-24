@@ -294,3 +294,15 @@ position: absolute;
   transform: translate(-50%, -50%); /* Que sería lo mismo a poner translate(-20px, -12.5px); */
 }
 ``` 
+``` 
+<!-- Scrolls -->
+Chicos el Scroll vertical es sencillo de conseguir, basicamente es poner los objetos de forma vertical con flex-direction: Column; abrovechando que ya tenemos el display flex. Luego tenemos que cambiar nuestras tres propiedades de overflow que tenemos en x a y.
+
+    display:flex;
+    flex-direction:column;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;```
+<!-- overflow vertical -->
+overflow-y: hidden;
+``` 
