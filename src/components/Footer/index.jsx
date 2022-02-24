@@ -1,28 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoPatata from "@logos/papapabit.svg";
-import "./index.scss";
+import logoPatata from "@logos/footer.svg";
+import "./index.scss";//!@
 
 const Footer =()=> { return ( <>
-
+<footer>
 <section>
-  {/* <ul>
-    <li><Link to="">i</Link></li>
-    <li><Link to="">i</Link></li>
-    <li><Link to="">i</Link></li>
-  </ul> */}
-</section>
-{/* <img src={logoPatata} alt="logoPatata" style={{width: "180px"}}/> */}
-<div class="cheat-person">
-  <div class="cheat-container">
-    <div class="container-inner"> <img class="papa-circle" src={logoPatata}/> </div>
+    <ul className="cheat-list">
+      <li><a href="https://github.com/rroderickk/" target="_blank" rel="noreferrer noopener">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/rodrigo-moreno-rr/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+      <li><a href="https://twitter.com/cheatmodes4/" target="_blank" rel="noreferrer noopener">Twitter</a></li>
+    </ul>
+  <div class="cheat-person">
+    <div class="cheat-container">
+      <div class="container-inner"> <img class="papa-circle" src={logoPatata}/> </div>
+    </div>
+    <div class="cheat-name">Rodrigo Moreno</div>
+    <div class="cheat-divider"></div>
+    <div class="cheat-title">@CheatModes4</div>
   </div>
-  <div class="cheat-divider"></div>
-  <div class="cheat-name">RodrigoMoreno</div>
-  <div class="cheat-title">CheatModes4</div>
-</div>
-<div>footer</div>
-<section></section>
-
-
+</section>
+</footer>
 </> ) }; export { Footer };
