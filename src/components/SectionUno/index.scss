@@ -79,7 +79,7 @@ main{
   align-self: center;
 }
 .currency-table-container td{
-  border-radius: 5px;
+  // border-radius: 5px;
   padding: 29px;
   width: 50%;
   font-size: 1.6rem;
@@ -97,6 +97,7 @@ main{
 // }
 .currency-table-container .table__bottom{
   border-radius: 0 0 15px 15px;
+  box-shadow: 0px 1px 1px rgba(89, 73, 30, 0.16);
 }
 
 .currency-table-container .price{
@@ -148,6 +149,7 @@ main{
   color: var(--black);
   box-shadow: 0px 1px 1px rgba(89, 73, 30, 0.16);
 }
+
 .comissions-table{
   // outline: 1px solid red;
   margin-top: 20px;
@@ -181,4 +183,16 @@ main{
 }
 .button{
   cursor: pointer;
+  background: linear-gradient(207.8deg, var(--bitcoin-orange-arrow) 06.68%, #F7931A 100%);
+}
+.button a{
+  color: var(--just-white);
+}
+.button:hover {
+  box-shadow: 0 1px 1px var(--warn-black);
+  a{
+  color:  var(--warn-black);
+  font-weight: bold;
+  font-family: var(--lobster);
+  }
 }

@@ -13,8 +13,8 @@ const CoinContainer =({ coin })=> { return ( <>
     <th className="table__top-right table__right">{coin.id}</th>
     <td className="price">   ${coin.current_price}</td>
     {coin.price_change_24h<0
-    ? <span className="spanDown"/>
-    : <span className="spanUp"/>}
+      ? <span className="spanDown"/>
+      : <span className="spanUp"/>}
   </td>
 </tr>
 
