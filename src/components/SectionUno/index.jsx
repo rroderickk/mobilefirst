@@ -48,14 +48,11 @@ return (  <>
         </table>
       </div>
     </div>
-    {/* //todo */}
-      <div  className="currency-table-date button">
-        <Link to="/allcryptos">All Cryptos</Link>
-      </div>
-      <div  className="currency-table-date">
-        <b>Updated: </b>{timeStamp()}
-      </div>
-      <TableComissions/>
+    <Link to="/allcryptos" className="button-all">All Crypto's</Link>
+    <div  className="currency-table-date">
+      <b>Updated: </b>{timeStamp()}
+    </div>
+    <TableComissions/>
   </section>
 </section>
 </main>
