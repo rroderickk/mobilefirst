@@ -1,0 +1,41 @@
+.Layout{
+  height: 10px;
+}
+.allcriptos-section-container{
+  position: relative;
+  top: -200px;
+  padding: 10px;
+  background-color: var(--just-white);
+  // outline: 1px solid red;
+  h1{
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .allcriptos-volver{
+    font-size: 13px;
+    // outline: 1px solid red;
+  }
+  .allcriptos-container{
+    padding: 10px;
+    min-width: 200px;
+    max-width: 290px;
+    // outline: 1px solid green;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-radius: 4px;
+    padding-bottom: 40px;
+    margin: 10px auto;
+    background-color: var(--off-white);
+  }
+  table{
+    // outline: 1px solid crimson;
+    width: 100%;
+  }
+  table td{
+    // outline: 1px solid orange;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--just-white);
+    // vertical-align: text-bottom;
+  }
+}

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useGetPrices } from "@hooks/useGetPrices";
+import { Header } from "@components/Header";
+import { Footer } from "@components/Footer";
 
 import { CoinContainer } from "./CoinContainer";
-import "./index.scss";
+import "./index.scss";//!@
 
 const AllCryptos =()=> { 
 const [coins, setCoins] = useState([]);
@@ -25,14 +27,16 @@ useEffect(() => {
 
 
 return ( <>
+<Header style={{backgroundColor: "red"}}/>
 <section className="allcriptos-section-container">
   <h1 className="allcriptos-title">All Cryptos</h1>
-  <Link to="/" className="allcriptos-title">En construccion...Volver</Link>
+  <Link to="/" className="allcriptos-volver">...Back</Link>
   <div className="allcriptos-container">
     { coins.length>0
     ? (coins.map(moneda=> <CoinContainer coin={moneda} key={moneda.id}/>))
     : (<tbody className="NoCoins">...Coins not found!</tbody>) }
   </div>
+<Footer/>
 </section>
 
 </> ) }; export { AllCryptos };
