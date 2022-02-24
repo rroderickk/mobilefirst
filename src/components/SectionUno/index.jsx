@@ -5,6 +5,7 @@ import { Tcoin           } from "./Tcoin";
 import { TableComissions } from "./TableComissions";
 import "./index.scss";//!@
 
+const timeStamp =()=> (new Date()).toString().slice(0,25);
 const SectionUno =()=> { 
 const [coins, setCoins] = useState([]);
 
@@ -24,7 +25,7 @@ useEffect(() => {
 }, [reload]);
 
 // const timeStamp =()=> new Date().toJSON().slice(0,19).replace("T"," ");
-const timeStamp =()=> (new Date()).toString().slice(0,25);
+// function timeStamp(){ (new Date()).toString().slice(0,25);}
 
 return (  <> 
 <main>
@@ -58,4 +59,4 @@ return (  <>
   </section>
 </section>
 </main>
-</> ) }; export { SectionUno };
+</> ) }; export {SectionUno, timeStamp};

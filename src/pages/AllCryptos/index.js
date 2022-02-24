@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link         } from "react-router-dom";
 import { useGetPrices } from "@hooks/useGetPrices";
-import { Header } from "@components/Header";
-import { Footer } from "@components/Footer";
+import { Header       } from "@components/Header";
+import { Footer       } from "@components/Footer";
+import { timeStamp    } from "@components/SectionUno";
 
 import { CoinContainer } from "./CoinContainer";
 import "./index.scss";//!@
@@ -29,9 +30,12 @@ useEffect(() => {
 return ( <>
 <Header style={{backgroundColor: "red"}}/>
 <section className="allcriptos-section-container">
-  <h1 className="allcriptos-title">All Cryptos</h1>
-  <Link to="/" className="allcriptos-volver">...Back</Link>
+  <h1 className="allcriptos-title">Cryptos</h1>
+  <Link to="/" className="allcriptos-volver">
+    <span className="backArrow"/>Back
+  </Link>
   <div className="allcriptos-container">
+    <b>Updated: {timeStamp()}</b>
     { coins.length>0
     ? (coins.map(moneda=> <CoinContainer coin={moneda} key={moneda.id}/>))
     : (<tbody className="NoCoins">...Coins not found!</tbody>) }

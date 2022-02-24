@@ -4,16 +4,34 @@
 .allcriptos-section-container{
   position: relative;
   top: -200px;
-  padding: 10px;
+  padding-top: 10px;
   background-color: var(--just-white);
   // outline: 1px solid red;
   h1{
-    font-size: 24px;
+    font-size: 9px;
+    font-family: var(--noto);
     padding-bottom: 10px;
   }
-  .allcriptos-volver{
+  .allcriptos-volver {
     font-size: 13px;
     // outline: 1px solid red;
+    background-color: var(--soft-orange);
+    border-radius: 4px;
+    padding: 4px 54px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+    justify-content: space-between;
+    .backArrow{
+      display: inline-block;
+      width: 15px;
+      height: 10px;
+      background-image: url("@icons/orange-right-arrow.svg");
+      transform: rotate(180deg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
   .allcriptos-container{
     padding: 10px;
@@ -26,10 +44,26 @@
     padding-bottom: 40px;
     margin: 10px auto;
     background-color: var(--off-white);
+    box-shadow: 0px 1px 1px rgba(89, 73, 30, 0.16);
+    font-family: var(--noto);
+    font-size: 1.1rem;
+    b{
+      background-color: var(--warn-black);
+      color: white;
+      width: 100px;
+      padding: 2px 30px;
+      font-size: 12px;
+      border-radius: 3px;
+      position: relative;
+      top: -16px;
+      box-shadow: 0px 1px 1px rgba(89, 73, 30, 0.16);
+      font-family: var(--lobster);
+    }
   }
   table{
     // outline: 1px solid crimson;
     width: 100%;
+    box-shadow: 0px 1px 1px rgba(89, 73, 30, 0.16);
   }
   table td{
     // outline: 1px solid orange;
