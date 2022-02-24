@@ -306,3 +306,5 @@ Chicos el Scroll vertical es sencillo de conseguir, basicamente es poner los obj
 <!-- overflow vertical -->
 overflow-y: hidden;
 ``` 
+
+![deploy](sc.png)
