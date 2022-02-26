@@ -3,9 +3,9 @@ import "./index.scss";
 import { Card } from "./Card";
 
 const CardData=[
-{dollarCost: 99,  plan: "Basic",    info:"* Save $129 compared to the daily plan",  membresy:"Monthly"  },
-{dollarCost: 199, plan: "Recommended", info:"* Save $159 compared to the monthly plan",membresy:"Quarterly"},
-{dollarCost: 499, plan: "Exclusive",info:"* Save $200 compared to the monthly plan",membresy:"Annual"   },
+{id: 0, dollarCost: 99,  plan: "Basic",    info:"* Save $129 compared to the daily plan",  membresy:"Monthly"  },
+{id: 1, dollarCost: 199, plan: "Recommended", info:"* Save $159 compared to the monthly plan",membresy:"Quarterly"},
+{id: 2, dollarCost: 499, plan: "Exclusive",info:"* Save $200 compared to the monthly plan",membresy:"Annual"   },
 ];
 
 const SectionCuatro =()=> { return (<> 

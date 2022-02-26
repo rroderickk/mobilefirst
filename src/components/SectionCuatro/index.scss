@@ -134,8 +134,24 @@
   left: 100%;
   top: 0px;
 }
-@media (min-width: 750px) {
-  .plans__container--slider::-webkit-scrollbar {
+@media screen and (min-width: 740px){
+  .plans-container-slider::-webkit-scrollbar {
     display: none;
+  }
+  .plans-container-slider{
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 900px){
+  .plans-container-slider::-webkit-scrollbar {
+    display: none;
+  }
+  .plans-container-slider{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./index.scss";//!@
 
-const Card =({ CardData })=> { return ( <>
+const Card =({ CardData })=> {  return ( <>
 
 <article 
 className={`plans-container-card ${CardData.plan=="Exclusive" && "Exclusive" || CardData.plan=="Recommended" && "Recommended"}`}>
