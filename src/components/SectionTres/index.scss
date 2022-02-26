@@ -2,10 +2,11 @@
   width: 100%;
   min-width: 320px;
   // height: 10vh;
-  background-image: url("@imgs/bitcoinbaby2x.jpg");
+  background: url("@imgs/bitcoinbaby2x.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat center/cover;
+  background-attachment: fixed;
 }
 .bitcoin-img-container h2{
   padding-top: 60px;

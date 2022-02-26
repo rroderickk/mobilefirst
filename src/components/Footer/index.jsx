@@ -3,7 +3,7 @@ import logoPatata from "@logos/footer.svg";
 import "./index.scss";//!@
 
 const Footer =()=> { return ( <>
-<footer>
+<footer className="foo">
 <section>
     <ul className="cheat-list">
       <li><a href="https://github.com/rroderickk/" target="_blank" rel="noreferrer noopener">Github</a></li>
@@ -14,9 +14,10 @@ const Footer =()=> { return ( <>
     <div class="cheat-container">
       <div class="container-inner"> <img class="papa-circle" src={logoPatata}/> </div>
     </div>
-    <div class="cheat-name">Rodrigo Moreno</div>
-    <div class="cheat-divider"></div>
-    <div class="cheat-title">@CheatModes4</div>
+    <div class="cheat-name">Rodrigo Moreno
+      <div class="cheat-divider"></div>
+      <div class="cheat-title">@CheatModes4</div>
+    </div>
   </div>
 </section>
 </footer>

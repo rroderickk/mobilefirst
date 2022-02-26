@@ -1,3 +1,7 @@
+.foo{
+  min-width: 320px;
+  width: 100%;
+}
 .cheat-person {
   align-items: center;
   flex-direction: column;
@@ -99,4 +103,23 @@ footer section{
 }
 .cheat-list a{
   color: var(--warn-black);
+}
+
+@media screen and (min-width: 740px){
+ .cheat-list{ 
+    // outline: 2px solid green;
+  }
+  .cheat-name{ 
+    margin-left: 220px;
+    // outline: 2px solid green;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .cheat-list{ 
+    // outline: 2px solid green;
+  }
+  .cheat-name{ 
+    margin-left: 220px;
+  }
 }

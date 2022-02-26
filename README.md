@@ -303,8 +303,33 @@ Chicos el Scroll vertical es sencillo de conseguir, basicamente es poner los obj
     overflow-y: scroll;
     overscroll-behavior-y: contain;
     scroll-snap-type: y proximity;```
+
 <!-- overflow vertical -->
 overflow-y: hidden;
+
+<!-- Parallax -->
+.main-image-container {
+    background: url(./assets/img/bitcoinbaby4x.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+
+``` 
+## Media Queries
+``` 
+@media screen and (min-width: 740px){
+  .plans__slider{
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 900px){
+  .card__container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
 ``` 
 
 ![deploy](sc.png)
