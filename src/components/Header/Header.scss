@@ -68,3 +68,14 @@ header img{
   margin-left: 10px;
   background-image: url("@icons/down-arrow.svg");
 }
+@media screen and (min-width: 900px){
+  .headerContainer .title-container p{
+    font-size: 2.5rem;
+  }
+  .headerContainer .title-container h1{
+    font-size: 3rem;
+  }
+  header .logo{
+    width: 40rem;
+  }
+}
