@@ -4,7 +4,7 @@ import "./index.scss";//!@
 
 const Footer =()=> { return ( <>
 <footer className="foo">
-<section>
+<section className="section--footer">
     <ul className="cheat-list">
       <li><a href="https://github.com/rroderickk/" target="_blank" rel="noreferrer noopener">Github</a></li>
       <li><a href="https://www.linkedin.com/in/rodrigo-moreno-rr/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
